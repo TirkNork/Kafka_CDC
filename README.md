@@ -14,8 +14,8 @@ serving as the source connector, while the JDBC connector, also within a Docker 
 ## Files in this project
 - [docker-compose.yml](src/docker-compose.yml) -> running multi-container Docker setup including Zookeeper, a broker, Schema Registry, Control Center, and ksqlDB 
 - [mysql-source.json](src/mysql-source.json) -> configuration file for setup source connector of kafka with debezium CDC connector.
-- [mysql-sink-kafka.json](src/mysql-sink-kafka.json) -> configuration file for setup source connector of kafka with  JDBC connector.
-- [mysql-sink-ksql.json](src/mysql-sink-ksql.json) -> configuration file for setup source connector of kafka kstream topic with JDBC connector
+- [mysql-sink-kafka.json](src/mysql-sink-kafka.json) -> configuration file for setup sink connector of kafka with  JDBC connector.
+- [mysql-sink-ksql.json](src/mysql-sink-ksql.json) -> configuration file for setup sink connector of kafka kstream topic with JDBC connector
 - [CLI.txt](src/CLI.txt) -> Command line Interface that use in project
 - [debezium-debezium-connector-mysq](src/connectors/debezium-debezium-connector-mysql) ->  debezium-connector file
 - [confluentinc-kafka-connect-jdbc](src/connectors/confluentinc-kafka-connect-jdbc) -> JDBC-connector file
